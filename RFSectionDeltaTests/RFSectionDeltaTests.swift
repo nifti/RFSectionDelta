@@ -235,7 +235,7 @@ class RFSectionDeltaTests: XCTestCase {
         let delta = section.generateDelta(fromOldArray: oldArray, toNewArray: newArray)
         
         XCTAssertNil(delta.unchangedIndices, "unchanged indices nil")
-        println("moved \(delta.movedIndexes)")
+        print("moved \(delta.movedIndexes)")
 //        XCTAssert(delta.movedIndexes == nil, "moved indices nil")
         
         XCTAssertNotNil(delta.addedIndices, "added indices")
